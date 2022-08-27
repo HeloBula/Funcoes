@@ -1,4 +1,3 @@
-//Arrumar mediaponderada
 #include <stdio.h>
 #include <math.h>
 
@@ -20,10 +19,7 @@ int main() {
     case 1:
       printf("A média escolhida foi média aritmética! Sua média é: %.2f",MedArit(N1,N2,N3));break;
     case 2:
-      if(MedPond(N1,N2,N3)>=10)
-      {printf("A média escolhida foi a média ponderada! Sua média é: 10");}
-      else
-      {printf("A média escolhida foi a média ponderada! Sua média é: %.2f",MedPond(N1,N2,N3));};break;
+      printf("A média escolhida foi a média ponderada! Sua média é: %.2f",MedPond(N1,N2,N3));break;
   }
     return 0;
 }
@@ -37,6 +33,6 @@ return mediaArit;
 float MedPond(float N1, float N2, float N3){
   float mediaPond=0;
 
-  mediaPond=(N1*5)+(N2*3)+(N3*2)/10;
+  mediaPond=((N1*5)+(N2*3)+(N3*2))/10;
  return mediaPond; 
 }
