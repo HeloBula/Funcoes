@@ -1,3 +1,5 @@
+//Esse Hanoi é o destruidor de universitários - apareceu em todas as matérias
+
 #include <stdio.h>
 
 int count = 0, limite;
